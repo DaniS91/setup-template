@@ -16,11 +16,9 @@ module.exports = {
   
   plugins: [
     new ESLintPlugin(),
-    new CleanWebpackPlugin( {
-      verbose: true
-    }),
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Shape Tracker',
+      title: 'Setup Template',
       template: './src/index.html',
       inject: 'body'
     })
